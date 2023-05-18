@@ -1,54 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>DM Pizza's</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome da Pizzaria - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
 <body>
-
-<h1>DM Pizza's</h1>
-
-<p>Escolha sua pizza</p>
-
-<ul>
-  <li><a href="#doces">Pizza Doce</a></li> 
-  <li><a href="#salgadas">Pizza Salgada</a></li>
-  <li><a href="#veganas">Pizza Vegana</a></li>
-  <li><a href="#fitness">Pizza Fitness</a></li>
-</ul>
-
-<div id="doces">
-  <h2>Pizza Doce</h2>
-  <ul>
-    <li>Banana com Nutella</li>  
-    <li>Morango com Chocolate</li>
-  </ul>
-</div> 
-
-<div id="salgadas">
-  <h2>Pizza Salgada</h2>
-  <ul>
-    <li>Calabresa</li>  
-    <li>Frango com Catupiry</li>   
-  </ul>
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/menu">Menu</a>
+      <a href="/carrinho">Carrinho</a>
+      <button id="adicionar-item" onclick="adicionarItem()">Adicionar item ao carrinho</button>
+<p>Itens no carrinho: <span id="itens-no-carrinho">0</span></p>
+      <div>
+  <h3>Menu</h3>
+  <div>
+    <p>Item 1 - R$ 10 <button onclick="adicionarItem(10)">Adicionar</button></p>
+    <p>Item 2 - R$ 15 <button onclick="adicionarItem(15)">Adicionar</button></p>
+    <p>Item 3 - R$ 20 <button onclick="adicionarItem(20)">Adicionar</button></p>
+  </div>
 </div>
-
-<div id="veganas">
-  <h2>Pizza Vegana</h2>
-  <ul>
-    <li>Cenoura, Brussels e Champignon</li>  
-    <li>Caramelo com Ervas</li>   
-  </ul>
-</div>  
-
-<div id="fitness">
-  <h2>Pizza Fitness</h2>  
-  <ul>
-    <li>Atum com Espinafre</li>
-    <li>Frango e Abobrinha</li>
-  </ul>
+<div>
+  <h3>Carrinho</h3>
+  <ul id="carrinho"></ul>
+  <p>Total: R$ <span id="total">0</span></p>
+  <button onclick="enviarPedido()">Enviar pedido</button>
 </div>
-
+    </nav>
+    <h1>Nome da Pizzaria</h1>
+  </header>
+  <main>
+    <h2>Bem-vindo à Nome da Pizzaria</h2>
+    <p>Somos uma pizzaria especializada em pizzas saborosas e saudáveis.</p>
+    <img src="pizza.jpg" alt="Pizza saborosa">
+  </main>
+  <footer>
+    <p>Nome da Pizzaria - Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
