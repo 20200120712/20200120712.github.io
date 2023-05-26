@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Saborosos Salgados - Menu</title>
+  <meta charset="UTF-8">
+  <title>Carrinho de Compras - Vendas de Salgados</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Confira o nosso menu</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Página Inicial</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="carrinho.html">Carrinho</a></li>
-        <li><a href="sobre.html">Sobre Nós</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <!-- Mesmo cabeçalho do arquivo index.html -->
   </header>
-  
-  <section>
-    <h2>Salgados disponíveis</h2>
-    <ul>
-      <li>Coxinha</li>
-      <li>Bolinha de queijo</li>
-      <li>Empada</li>
-      <li>Kibe</li>
-      <li>Esfiha</li>
-    </ul>
-  </section>
+
   <section>
     <h2>Itens no seu carrinho:</h2>
     <ul id="carrinho"></ul>
     <p id="total"></p>
-    <button onclick="fazerPedido()">Fazer Pedido</button>
-  </section>  
-  <button onclick="fazerPedido()">Fazer Pedido</button> 
+    <button onclick="fazerPedido()" class="btn">Fazer Pedido</button>
+  </section>
+
   <footer>
-    <p>&copy; 2023 Saborosos Salgados. Todos os direitos reservados.</p>
+    <!-- Mesmo rodapé do arquivo index.html -->
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
