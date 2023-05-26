@@ -1,4 +1,3 @@
-/*carrinho*/
 
   // Array para armazenar os itens no carrinho
   var carrinho = [];
@@ -29,4 +28,11 @@
     totalElemento.textContent = "Total: R$ " + total.toFixed(2);
   }
 
-
+  // Função para fazer o pedido
+  function fazerPedido() {
+    // Aqui você pode adicionar a lógica para enviar o pedido
+    // Por exemplo, exibir uma mensagem de confirmação ou redirecionar para outra página
+    alert("Pedido enviado com sucesso!");
+    // Redirecionar para a página inicial após o pedido ser enviado
+    window.location.href = "index.html";
+  }
